@@ -1,28 +1,40 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'open_sanslight', Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: 'Open Sans Light', Arial, Helvetica, sans-serif;
   margin: 3em;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 3em;
   color: #aeaeae;
 }
 
 .subtitle {
   font-size: 1.6em;
   color: #6e6e6e;
-  margin: : -15px;
+  margin: -1em;
 }
 
 .main {
   text-align: center;
-  background-color: rgb(239, 243, 245);
+  background-color: #eff3f5;
   border-radius: 1.5em;
   border: 1px solid #cfd1d5;
   transition: all .75s;
-  height: 250px;
+  height: 300px;
+  padding: 100px;
 }
 
 .main:hover {
-  background-color: rgb(217, 242, 245)
+  border-radius: 5em;
+  border: 30px solid #d9f2f5;
 }

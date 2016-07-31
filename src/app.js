@@ -4,7 +4,7 @@ require('electron-debug') // ({ showDevTools: true })
 let mainWindow
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 1200, height: 800 })
+  mainWindow = new BrowserWindow({ width: 1200, height: 700 })
   mainWindow.loadURL(`file://${__dirname}/view/index.html`)
   mainWindow.on('closed', function () {
     mainWindow = null
