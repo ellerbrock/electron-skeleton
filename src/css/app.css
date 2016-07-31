@@ -9,6 +9,7 @@
 body {
   -webkit-user-select: none;
   user-select: none;
+  cursor: default;
   font-family: 'Open Sans Light', Arial, Helvetica, sans-serif;
   margin: 3em;
 }
@@ -30,11 +31,19 @@ body {
   border-radius: 1.5em;
   border: 1px solid #cfd1d5;
   transition: all .75s;
-  height: 300px;
+  min-height: 300px;
   padding: 100px;
 }
 
 .main:hover {
   border-radius: 5em;
   border: 30px solid #d9f2f5;
+}
+
+.log {
+  margin-top: 15px;
+}
+
+.last {
+  margin-bottom: 10px;
 }

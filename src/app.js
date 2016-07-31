@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron')
-require('electron-debug') // ({ showDevTools: true })
+require('electron-debug') //({ showDevTools: true })
 
 let mainWindow
 
