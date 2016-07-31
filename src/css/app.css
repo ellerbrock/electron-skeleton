@@ -1,0 +1,28 @@
+body {
+  font-family: 'open_sanslight', Arial, Helvetica, sans-serif;
+  margin: 3em;
+}
+
+.title {
+  font-size: 48px;
+  color: #aeaeae;
+}
+
+.subtitle {
+  font-size: 1.6em;
+  color: #6e6e6e;
+  margin: : -15px;
+}
+
+.main {
+  text-align: center;
+  background-color: rgb(239, 243, 245);
+  border-radius: 1.5em;
+  border: 1px solid #cfd1d5;
+  transition: all .75s;
+  height: 250px;
+}
+
+.main:hover {
+  background-color: rgb(217, 242, 245)
+}
