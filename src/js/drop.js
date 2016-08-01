@@ -1,12 +1,13 @@
+'use strict'
+
 const dragDrop = require('drag-drop')
-const $ = require('jQuery');
+const $ = require('jQuery')
 
 dragDrop('.drop', function (files) {
   console.log('Dropped files: ', files)
 
   // `files` is an Array!
   files.forEach(function (file) {
-
     $('.log').append(`<li><strong>Name: ${file.name}</strong></li>`)
     $('.log').append(`<li>Size: ${file.size} Byte</li>`)
     $('.log').append(`<li>Type: ${file.type}</li>`)

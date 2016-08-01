@@ -1,12 +1,27 @@
+'use strict'
+
 const { app, BrowserWindow } = require('electron')
-require('electron-debug') //({ showDevTools: true })
+const windowStateKeeper = require('electron-window-state')
+require('electron-debug') // ({ showDevTools: true })
 
 let mainWindow
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 1200, height: 700 })
+  let mainWindowState = windowStateKeeper({
+    defaultWidth: 1200,
+    defaultHeight: 700
+  })
+
+  mainWindow = new BrowserWindow({
+    'width': mainWindowState.width,
+    'height': mainWindowState.height
+      // 'x': mainWindowState.x,
+      // 'y': mainWindowState.y,
+  })
+
+  mainWindowState.manage(mainWindow)
   mainWindow.loadURL(`file://${__dirname}/view/index.html`)
-  mainWindow.on('closed', function () {
+  mainWindow.on('closed', () => {
     mainWindow = null
   })
 }
