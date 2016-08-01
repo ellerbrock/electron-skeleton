@@ -40,6 +40,11 @@ body {
   border: 30px solid #d9f2f5;
 }
 
+.info {
+  margin-top: 15px;
+  font-style: italic;
+}
+
 .log {
   margin-top: 15px;
 }

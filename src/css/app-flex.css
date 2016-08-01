@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url('../fonts/opensans-light.eot');
+  src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-light.woff') format('woff'), url('../fonts/opensans-light.ttf') format('truetype'), url('../fonts/opensans-light.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  font-family: 'OpenSans Light', Arial, Helvetica, sans-serif;
+  background: url(../img/spiral/drop-v1.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+li {
+  margin: 5px;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #aff3f5;
+}
+
+a:hover {
+  text-decoration: underline;
+}

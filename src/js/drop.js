@@ -1,7 +1,7 @@
-const $ = require('jQuery');
 const dragDrop = require('drag-drop')
+const $ = require('jQuery');
 
-dragDrop('.main', function (files) {
+dragDrop('.drop', function (files) {
   console.log('Dropped files: ', files)
 
   // `files` is an Array!
@@ -12,7 +12,6 @@ dragDrop('.main', function (files) {
     $('.log').append(`<li>Type: ${file.type}</li>`)
     $('.log').append(`<li class="last">Path: ${file.fullPath}</li>`)
 
-    /*
     // convert the file to a Buffer that we can use!
     const reader = new FileReader()
     reader.addEventListener('load', function (e) {
@@ -25,7 +24,6 @@ dragDrop('.main', function (files) {
     reader.addEventListener('error', function (err) {
       console.error('FileReader error' + err)
     })
-    */
 
     reader.readAsArrayBuffer(file)
   })
